@@ -7,6 +7,7 @@
 import json
 from pprint import pprint
 import hashlib
+import os
 
 class SearchWiki:
     def __init__(self, name_f):
@@ -31,7 +32,7 @@ if __name__ == '__main__':
 2. Написать генератор, который принимает путь к файлу.
 При каждой итерации возвращает md5 хеш каждой строки файла.
 """
-import os
+
 
 def md5_hush(name_file):
   way = os.path.join(os.getcwd(),name_file)
